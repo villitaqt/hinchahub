@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HinchaHub - Conéctate con Hinchas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind: bg-slate-50 */
+            color: #1e293b; /* Tailwind: text-slate-800 */
+        }
+        /* Custom styles for subtle shadows and rounded corners */
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 0.75rem; /* rounded-xl */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white card-shadow p-4 md:p-6 flex justify-between items-center fixed w-full top-0 z-50">
+        <div class="flex items-center">
+            <svg class="w-8 h-8 text-indigo-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H2v-2a3 3 0 015.356-1.857M17 20v-2c0-.18-.01-.36-.02-.54m0 0A7.5 7.5 0 0017 10.5a7.5 7.5 0 00-7.5-7.5h0c-.412 0-.817.03-1.216.09M10.5 17a7.5 7.5 0 007.5-7.5 7.5 7.5 0 00-7.5-7.5h0c-.412 0-.817.03-1.216.09m-2.455 8.216A7.5 7.5 0 0110.5 17"></path>
+            </svg>
+            <h1 class="text-2xl font-bold text-gray-900">HinchaHub</h1>
+        </div>
+        <nav>
+            <a href="#cta-section" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out">
+                Descargar App
+            </a>
+        </nav>
+    </header>
+
+    <section class="relative bg-gradient-to-br from-indigo-500 to-purple-600 text-white py-20 md:py-32 mt-16 md:mt-20 overflow-hidden rounded-b-3xl">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between z-10 relative">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-up">
+                    Vive la Pasión del Fútbol, Juntos.
+                </h2>
+                <p class="text-lg md:text-xl mb-8 opacity-90 animate-fade-in-up delay-200">
+                    Encuentra y organiza watchparties para tus partidos favoritos. ¡Nunca más verás un gol solo!
+                </p>
+                <a href="#cta-section" class="bg-white text-indigo-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 animate-fade-in-up delay-400">
+                    ¡Encuentra tu WatchParty!
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end animate-fade-in-right">
+                <img src="https://placehold.co/500x350/6366f1/ffffff?text=App+Screenshot" alt="Captura de pantalla de la aplicación WatchParty Fútbol" class="rounded-xl card-shadow max-w-full h-auto">
+            </div>
+        </div>
+        <div class="absolute top-0 left-0 w-full h-full opacity-10">
+            <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 256L48 240C96 224 192 192 288 186.7C384 181.3 480 202.7 576 213.3C672 224 768 224 864 208C960 192 1056 160 1152 160C1248 160 1344 192 1392 208L1440 224V0H1392C1344 0 1248 0 1152 0C1056 0 960 0 864 0C768 0 672 0 576 0C480 0 384 0 288 0C192 0 96 0 48 0H0V256Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">¿Cómo Funciona?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-xl card-shadow transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="bg-indigo-100 text-indigo-600 rounded-full p-4 mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">1. Explora Eventos</h4>
+                    <p class="text-gray-600">Descubre watchparties cerca de ti, filtrando por equipo, ambiente o ubicación.</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-xl card-shadow transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="bg-green-100 text-green-600 rounded-full p-4 mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">2. Únete o Crea</h4>
+                    <p class="text-gray-600">Confirma tu asistencia a un evento existente o crea tu propia watchparty.</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-xl card-shadow transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="bg-purple-100 text-purple-600 rounded-full p-4 mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">3. ¡Disfruta el Partido!</h4>
+                    <p class="text-gray-600">Conéctate con otros hinchas y vive la emoción del fútbol en compañía.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-slate-50">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Beneficios Clave</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-xl card-shadow text-left transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M12 20.005v-2.004m0 0a4 4 0 01-4-4v-1a4 4 0 014-4h0a4 4 0 014 4v1a4 4 0 01-4 4z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">Comunidad Apasionada</h4>
+                    </div>
+                    <p class="text-gray-600">Encuentra y conecta con otros hinchas que comparten tu amor por el fútbol.</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl card-shadow text-left transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-100 text-yellow-600 rounded-full p-3 mr-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5 1v-5a2 2 0 012-2h2.5a2 2 0 012 2v5zM15 20l-5 1v-5a2 2 0 012-2h2.5a2 2 0 012 2v5zM17.5 10a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM6.5 10a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">Ambiente a tu Gusto</h4>
+                    </div>
+                    <p class="text-gray-600">Desde reuniones tranquilas hasta celebraciones eufóricas, elige el ambiente ideal.</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl card-shadow text-left transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-100 text-red-600 rounded-full p-3 mr-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V9m0 3v1m0 3v1"></path>
+                            </svg>
+                        </div
+                        ><h4 class="text-xl font-semibold text-gray-800">Organiza Fácilmente</h4>
+                    </div>
+                    <p class="text-gray-600">Crea y gestiona tus propios eventos de watchparty en pocos pasos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta-section" class="bg-indigo-700 py-16 md:py-24 text-white text-center rounded-t-3xl">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-5xl font-bold mb-6">¿Listo para Unirte a la Fiesta del Fútbol?</h3>
+            <p class="text-lg md:text-xl mb-8 opacity-90">
+                Descarga WatchParty Fútbol hoy y empieza a vivir los partidos como nunca antes.
+            </p>
+            <a href="#" class="bg-white text-indigo-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">
+                ¡Descargar Ahora!
+            </a>
+            <div class="flex justify-center mt-8 space-x-4">
+                <img src="https://placehold.co/150x50/ffffff/000000?text=App+Store" alt="Descargar en App Store" class="h-12 rounded-lg cursor-pointer">
+                <img src="https://placehold.co/150x50/ffffff/000000?text=Google+Play" alt="Descargar en Google Play" class="h-12 rounded-lg cursor-pointer">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2025 WatchParty Fútbol. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-white transition duration-300 ease-in-out">Términos de Servicio</a>
+                <a href="#" class="hover:text-white transition duration-300 ease-in-out">Política de Privacidad</a>
+                <a href="#" class="hover:text-white transition duration-300 ease-in-out">Contacto</a>
+            </div>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" aria-label="Facebook" class="hover:text-white transition duration-300 ease-in-out">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Twitter" class="hover:text-white transition duration-300 ease-in-out">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.41-4.293 4.106 4.106 0 001.27 5.477A4.072 4.072 0 014 9.773v.058a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Instagram" class="hover:text-white transition duration-300 ease-in-out">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 0C8.74 0 8.333.014 7.053.072 5.775.132 4.92 1.13 4.72 2.48c-.2 1.355-.275 1.77-.264 4.956.012 3.28 0 3.668.079 4.94.056 1.173.186 1.79.375 2.408.2.647.479 1.253.87 1.64.39.386.983.665 1.635.87.618.189 1.23.319 2.407.375 1.27.079 1.658.068 4.94.079 3.27.01 3.668 0 4.956-.079 1.27-.056 1.84-.176 2.408-.375.647-.2.926-.478 1.64-.87.386-.39.665-.983.87-1.635.189-.618.319-1.23.375-2.407.079-1.27.068-1.658.079-4.94.01-3.27 0-3.668-.079-4.956-.056-1.27-.176-1.84-.375-2.408-.2-.647-.478-.926-.87-1.64-.39-.386-.982-.665-1.635-.87-.618-.189-1.23-.319-2.407-.375C15.668.014 15.27.001 12 0zm0 2.16c3.2 0 3.58.01 4.85.071 1.17.055 1.7.249 2.05.38.35.13.67.3.96.59.29.29.46.61.59.96.13.35.32.88.38 2.05.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.7-.38 2.05-.13.35-.3.67-.59.96-.29.29-.61.46-.96.59-.35.13-.88.32-2.05.38-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.7-.24-2.05-.38-.35-.13-.67-.3-.96-.59-.29-.29-.46-.61-.59-.96-.13-.35-.32-.88-.38-2.05-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.7.38-2.05.13-.35.3-.67.59-.96.29-.29.61-.46.96-.59.35-.13.88-.32 2.05-.38 1.27-.06 1.65-.07 4.85-.07zm0 3.673a6.108 6.108 0 100 12.216 6.108 6.108 0 000-12.216zM12 16a4 4 0 110-8 4 4 0 010 8zm6.5-7.5a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
